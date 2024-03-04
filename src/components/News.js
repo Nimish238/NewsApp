@@ -67,7 +67,7 @@ useEffect(() => {
             />
             <h2>NewsApp - {capitalizeFirstLetter(searchQuery)} News</h2>
             {/*  loading is used for gif (loading && means if its true spinner will show) */}
-            {/* {loading && <Spinner/>} */}
+             {loading && <Spinner/>} 
             {/* ternary operator */}
             {displayedNews.length>0 ? (
                 
@@ -80,7 +80,7 @@ useEffect(() => {
                     ))}
                 </div>
             ) : (
-            <p>{loading && <Spinner/>}</p>
+            <p>loading..</p>
             )}
 
             
